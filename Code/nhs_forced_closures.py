@@ -9,7 +9,6 @@ from pandas import json_normalize
 import time
 
 
-closures = pd.read_csv("https://raw.githubusercontent.com/BenGoodair/forced_closures/main/Data/closures_full.csv", encoding='ISO-8859-1')
 
 
 
@@ -311,9 +310,6 @@ result_df.to_csv(csv_file_path, index=False)  # Set index=False to avoid writing
 
 print("--- %s seconds ---" % (time.time() - start_time))
 end_time = time.time()
-
-
-
 
 
 
